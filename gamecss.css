@@ -1,0 +1,122 @@
+button {
+	margin-top: 20px;
+}
+
+body {
+	background-color: #E5E7E9;
+}
+.container {
+	max-width: 550px;
+	margin: auto;
+	text-align: center;
+	padding: 7px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #AAB7B8;
+	border-radius: 40px;
+}
+
+.board {
+	margin-top: 20px;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}
+
+.marbles {
+	margin: auto;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.marble {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: 2px solid black;
+	box-sizing: border-box;
+	margin-right: 10px;
+}
+
+.pegs {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.peg {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	border: 2px solid black;
+	box-sizing: border-box;
+	margin-left: 10px;
+	background-color: transparent;
+}
+
+.colourPalette{
+	display: flex;
+	justify-content: center;
+	width: 360px;
+	height: 60px;
+	margin: auto;
+}
+
+.colour {
+	width: 60px;
+	height: 60px;
+	border: 2px solid black;
+	margin-left: 1px;
+	cursor: pointer;
+}
+.code {
+	margin: auto;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.codeColour {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid black;
+	box-sizing: border-box;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+.currentColour {
+	width: 200px;
+	height: 60px;
+	border: 2px solid black;
+	margin: auto;
+	margin-top: 5px;
+}
+
+button{
+	font-family: sans-serif;
+	background-color: #70C0E6;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: 0 10px #2F5161;
+	transition: 0.1s;
+}
+button:hover {
+	background-color: #94D4F2;
+}
+button:active {
+	box-shadow: 0 5px #1B2F38;
+	transform: translateY(5px);
+}
+
+#codeMakerWins {
+	display: none;
+}
+#codeBreakerWins {
+	display: none;
+}

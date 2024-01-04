@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mastermind Game</title>
+  <link rel="stylesheet" href="gamecss.css">
+</head>
+<body>
+	<div class="container">
+	  <h1>Mastermind Game</h1>
+		<div class="board">
+			<div class="row" id="codeRow">
+				<h2>Secret code:</h2>
+				<div class="code">
+					<div class="codeColour" id="cc1"></div>
+					<div class="codeColour" id="cc2"></div>
+					<div class="codeColour" id="cc3"></div>
+					<div class="codeColour" id="cc4"></div>
+				</div>
+				<button type="button" id="submitCode">Submit Code</button>
+			</div>
+			<div class="row" id="row12">
+			  <div class="marbles">
+				<div class="marble" id="m121"></div>
+				<div class="marble" id="m122"></div>
+				<div class="marble" id="m123"></div>
+				<div class="marble" id="m124"></div>
+			  </div>
+			  <div class="pegs">
+				<div class="peg" id="p121"></div>
+				<div class="peg" id="p122"></div>
+				<div class="peg" id="p123"></div>
+				<div class="peg" id="p124"></div>
+			  </div>
+			</div>
+			<div class="row" id="row11">
+			  <div class="marbles">
+				<div class="marble" id="m111"></div>
+				<div class="marble" id="m112"></div>
+				<div class="marble" id="m113"></div>
+				<div class="marble" id="m114"></div>
+			  </div>
+			  <div class="pegs">
+				<div class="peg" id="p111"></div>
+				<div class="peg" id="p112"></div>
+				<div class="peg" id="p113"></div>
+				<div class="peg" id="p114"></div>
+			  </div>
+			</div>
+			<div class="row" id="row10">
+			  <div class="marbles">
+				<div class="marble" id="m101"></div>
+				<div class="marble" id="m102"></div>
+				<div class="marble" id="m103"></div>
+				<div class="marble" id="m104"></div>
+			  </div>
+			  <div class="pegs">
+				<div class="peg" id="p101"></div>
+				<div class="peg" id="p102"></div>
+				<div class="peg" id="p103"></div>
+				<div class="peg" id="p104"></div>
+			  </div>
+			</div>
+			<div class="row" id="row9">
+			  <div class="marbles">
+				<div class="marble" id="m91"></div>
+				<div class="marble" id="m92"></div>
+				<div class="marble" id="m93"></div>
+				<div class="marble" id="m94"></div>
+			  </div>
+			  <div class="pegs">
+				<div class="peg" id="p91"></div>
+				<div class="peg" id="p92"></div>
+				<div class="peg" id="p93"></div>
+				<div class="peg" id="p94"></div>
+			  </div>
+			</div>
+			<div class="row" id="row8">
+			  <div class="marbles">
+				<div class="marble" id="m81"></div>
+				<div class="marble" id="m82"></div>
+				<div class="marble" id="m83"></div>
+				<div class="marble" id="m84"></div>
+			  </div>
+			  <div class="pegs">
+				<div class="peg" id="p81"></div>
+				<div class="peg" id="p82"></div>
+				<div class="peg" id="p83"></div>
+				<div class="peg" id="p84"></div>
+			  </div>
+			</div>
+			<div class="row" id="row7">
+			  <div class="marbles">
+				<div class="marble" id="m71"></div>
+				<div class="marble" id="m72"></div>
+				<div class="marble" id="m73"></div>
+				<div class="marble" id="m74"></div>
+			  </div>
+			  <div class="pegs">
+				<div class="peg" id="p71"></div>
+				<div class="peg" id="p72"></div>
+				<div class="peg" id="p73"></div>
+				<div class="peg" id="p74"></div>
+			  </div>
+			</div>
+			<div class="row" id="row6">
+			  <div class="marbles">
+				<div class="marble" id="m61"></div>
+				<div class="marble" id="m62"></div>
+				<div class="marble" id="m63"></div>
+				<div class="marble" id="m64"></div>
+			  </div>
+			  <div class="pegs">
+				<div class="peg" id="p61"></div>
+				<div class="peg" id="p62"></div>
+				<div class="peg" id="p63"></div>
+				<div class="peg" id="p64"></div>
+			  </div>
+			</div>
+			<div class="row" id="row5">
+			  <div class="marbles">
+				<div class="marble" id="m51"></div>
+				<div class="marble" id="m52"></div>
+				<div class="marble" id="m53"></div>
+				<div class="marble" id="m54"></div>
+			  </div>
+			  <div class="pegs">
+				<div class="peg" id="p51"></div>
+				<div class="peg" id="p52"></div>
+				<div class="peg" id="p53"></div>
+				<div class="peg" id="p54"></div>
+			  </div>
+			</div>
+			<div class="row" id="row4">
+			  <div class="marbles">
+				<div class="marble" id="m41"></div>
+				<div class="marble" id="m42"></div>
+				<div class="marble" id="m43"></div>
+				<div class="marble" id="m44"></div>
+			  </div>
+			  <div class="pegs">
+				<div class="peg" id="p41"></div>
+				<div class="peg" id="p42"></div>
+				<div class="peg" id="p43"></div>
+				<div class="peg" id="p44"></div>
+			  </div>
+			</div>
+			<div class="row" id="row3">
+			  <div class="marbles">
+				<div class="marble" id="m31"></div>
+				<div class="marble" id="m32"></div>
+				<div class="marble" id="m33"></div>
+				<div class="marble" id="m34"></div>
+			  </div>
+			  <div class="pegs">
+				<div class="peg" id="p31"></div>
+				<div class="peg" id="p32"></div>
+				<div class="peg" id="p33"></div>
+				<div class="peg" id="p34"></div>
+			  </div>
+			</div>
+			<div class="row" id="row2">
+			  <div class="marbles">
+				<div class="marble" id="m21"></div>
+				<div class="marble" id="m22"></div>
+				<div class="marble" id="m23"></div>
+				<div class="marble" id="m24"></div>
+			  </div>
+			  <div class="pegs">
+				<div class="peg" id="p21"></div>
+				<div class="peg" id="p22"></div>
+				<div class="peg" id="p23"></div>
+				<div class="peg" id="p24"></div>
+			  </div>
+			</div>
+			<div class="row" id="row1">
+			  <div class="marbles">
+				<div class="marble" id="m11"></div>
+				<div class="marble" id="m12"></div>
+				<div class="marble" id="m13"></div>
+				<div class="marble" id="m14"></div>
+			  </div>
+			  <div class="pegs">
+				<div class="peg" id="p11"></div>
+				<div class="peg" id="p12"></div>
+				<div class="peg" id="p13"></div>
+				<div class="peg" id="p14"></div>
+			  </div>
+			</div>
+		</div>
+		<h3 id="codeMakerWins"> Codemaker Wins! </h3>
+		<h3 id ="codeBreakerWins"> Codebreaker Wins! </h3>
+		<h2>Choose colours</h2>
+		<div class="colourPalette">
+			<div class="colour" id="red" style="background-color: red;"></div>
+			<div class="colour" id="orange" style="background-color: #FFA500;"></div>
+			<div class="colour" id="green" style="background-color: green;"></div>
+			<div class="colour" id="blue" style="background-color: #006EE6;"></div>
+			<div class="colour" id="grey" style="background-color: #ECF0F1;"></div>
+			<div class="colour" id="black" style="background-color: #17202A;"></div>
+		</div>
+		<div class="currentColour"></div>
+		<button type="button" id="submitColours">Submit Colours</button>
+	</div>
+	<script src="gamelogic.js"></script>
+</body>
+</html>
